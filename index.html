@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>🎄 Weihnachts-Gutschein</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 style="text-align:center">🎄🐄 Weihnachts-Gutschein</h1>
+
+<div id="scene" style="text-align:center">
+  <svg viewBox="0 0 900 600" style="max-width:100%">
+    <rect width="900" height="600" fill="#0b1020"/>
+
+    <!-- Kuh -->
+    <g transform="translate(200,320)">
+      <ellipse cx="250" cy="120" rx="240" ry="120" fill="#7a4a2e"/>
+      <ellipse cx="100" cy="140" rx="60" ry="50" fill="#6a3f27"/>
+      <circle cx="80" cy="135" r="6" fill="#000"/>
+      <circle cx="120" cy="135" r="6" fill="#000"/>
+
+      <!-- Weihnachtsbaum -->
+      <g transform="translate(200,-160)">
+        <polygon points="0,140 60,0 120,140" fill="#1f7a46"/>
+        <polygon points="20,200 60,80 100,200" fill="#1f7a46"/>
+        <rect x="50" y="200" width="20" height="40" fill="#6b3d23"/>
+      </g>
+    </g>
+  </svg>
+
+  <p><b>Schritt 1:</b> Tippe die Kuh an 🤠</p>
+  <button onclick="start()">Start</button>
+
+  <div id="gift" style="display:none; margin-top:20px">
+    <h2>🎁 Dein Gutschein</h2>
+    <div style="font-size:20px; font-weight:bold">
+      WUNSCHGUTSCHEIN-20EURO
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
