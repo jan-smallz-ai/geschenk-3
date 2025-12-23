@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+  background: radial-gradient(circle at top, #22306a, #0b1020 70%);
+  color: #eef2ff;
+}
+
+h1 {
+  margin: 16px 0;
+}
+
+#scene {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Button */
+button {
+  margin-top: 12px;
+  padding: 12px 18px;
+  border-radius: 999px;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  background: #ffd166;
+  color: #1a1a1a;
+}
+
+/* ===== Animationen ===== */
+
+/* Kuh Rodeo */
+svg g {
+  transform-origin: center;
+}
+
+.rodeo {
+  animation: rodeo 0.6s infinite ease-in-out;
+}
+
+@keyframes rodeo {
+  0%   { transform: translateY(0) rotate(0deg); }
+  25%  { transform: translateY(-6px) rotate(-2deg); }
+  50%  { transform: translateY(4px) rotate(2.5deg); }
+  75%  { transform: translateY(-4px) rotate(-1.5deg); }
+  100% { transform: translateY(0) rotate(0deg); }
+}
+
+/* Geschenk */
+#gift {
+  background: rgba(0,0,0,0.4);
+  border-radius: 16px;
+  padding: 16px;
+  display: inline-block;
+}
